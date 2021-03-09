@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/standard_margin">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView_detailChannel_itemDefault"
+        android:layout_width="190dp"
+        android:layout_height="110dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:background="@drawable/imageview_shape_homepage"
+        tools:src="@drawable/ic_launcher_background"
+        />
+
+    <com.rasa.customfontviews.CustomFontTextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        tools:text="salam "
+        android:layout_alignRight="@+id/imageView_detailChannel_itemDefault"
+        android:layout_alignLeft="@+id/imageView_detailChannel_itemDefault"
+        android:layout_below="@+id/imageView_detailChannel_itemDefault"
+        android:layout_marginTop="@dimen/small_margin"
+        app:fonts_TextView="iranSans"
+        android:textColor="@android:color/black"
+        />
+
+        <com.rasa.customfontviews.CustomFontTextView
+            android:id="@+id/DefaultVisit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="144"
+            android:maxLines="1"
+            android:layout_below="@+id/textView_title"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/small_margin"
+            app:fonts_TextView="iranSans"
+            android:textColor="@color/colorIconMore"
+            android:layout_toLeftOf="@+id/textview_discription"
+            />
+
+    <com.rasa.customfontviews.CustomFontTextView
+        android:id="@+id/textview_discription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        tools:text="alii"
+        android:layout_alignRight="@+id/imageView_detailChannel_itemDefault"
+        android:layout_alignLeft="@+id/imageView_detailChannel_itemDefault"
+        android:layout_below="@+id/textView_title"
+        android:layout_marginTop="@dimen/small_margin"
+        app:fonts_TextView="iranSans"
+        android:textColor="@android:color/black"
+        />
+
+
+        </RelativeLayout>
+
+
+
+</LinearLayout>

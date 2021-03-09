@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="rtl">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_titleAsk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/small_margin">
+
+        <ImageView
+            android:id="@+id/imageView_iconShow"
+            android:layout_width="@dimen/layout_width_icon_frequentlyAsked"
+            android:layout_height="@dimen/layout_height_icon_frequentlyAsked"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/standard_margin"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_arrow_drop_down_white_24dp"/>
+
+        <com.rasa.customfontviews.CustomFontTextView
+            android:id="@+id/titleAsk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fonts_TextView="iranSansBold"
+            tools:text="ukfblhjkbswadkjhvbjhsd"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageView_iconShow"
+            android:gravity="right"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+    <com.rasa.customfontviews.CustomFontTextView
+        android:id="@+id/textViewAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fonts_TextView="iranSans"
+        tools:text="sgsghdhtgfhfg"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:layout_below="@+id/relativeLayout_titleAsk"
+        android:padding="@dimen/standard_margin"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

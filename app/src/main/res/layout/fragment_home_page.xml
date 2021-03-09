@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Home.fragment_homePage"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardViewForSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="3dp"
+            android:layout_margin="@dimen/small_margin"
+            >
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/sliderLayout"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_alignParentTop="true"
+                />
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView_bannerSecoundType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="6dp"
+            android:layout_margin="@dimen/standard_margin"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_homePage_bannerSecoundType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+        android:id="@+id/cardView_offerBakh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="@dimen/standard_margin"
+        android:layout_below="@+id/cardView_bannerSecoundType">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout_offerBakh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView_offerBakh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="پیشنهاد باخ"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/standard_margin"
+                    android:textColor="@android:color/black"/>
+
+                <ImageView
+                    android:id="@+id/imageView_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginLeft="18dp"
+                    app:srcCompat="@drawable/ic_chevron_left_24dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textView_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="بیشتر"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView_more"
+                    android:textColor="@android:color/black"
+                    />
+
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_homePage_offerBakh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin"
+                />
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="4dp"
+            android:layout_margin="@dimen/standard_margin"
+            android:layout_below="@+id/cardView_offerBakh">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="تازه ها"
+                        android:textColor="@android:color/black"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/standard_margin"/>
+
+                    <ImageView
+                        android:id="@+id/imageView_more_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginLeft="23dp"
+                        app:srcCompat="@drawable/ic_chevron_left_24dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView_more_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="بیشتر"
+                        android:textColor="@android:color/black"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageView_more_new"
+                        />
+
+
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_homePage_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/standard_margin"
+                    />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>

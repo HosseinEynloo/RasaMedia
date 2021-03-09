@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:id="@+id/coordinatorLayoutFrequentlyAsked"
+    tools:context=".ActivityFrequentlyAsked.FrequentlyAsked">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/colorPrimary">
+
+        <com.rasa.customfontviews.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fonts_TextView="iranSansBold"
+            android:textColor="@android:color/white"
+            android:text="سوالات متداول"
+            android:layout_centerInParent="true"/>
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerviewFrequentlyAsked"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayoutToolbar"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_progressBar_frequentlyAsked"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0f2f1"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/progressBar_frequentlyAsked"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+
+        <com.rasa.customfontviews.CustomFontTextView
+            android:id="@+id/textViewPlaseWait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="لطفا صبر کنید"
+            android:textColor="@color/redColor"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            app:fonts_TextView="iranSans"
+            android:layout_below="@+id/progressBar_frequentlyAsked"
+            />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

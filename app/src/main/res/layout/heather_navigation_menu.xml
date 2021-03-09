@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/imageView_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/imag_header"
+            android:background="@color/white"
+           />
+
+        <ImageView
+            android:id="@+id/imageViewHeaderImage"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/standard_margin"
+            />
+
+        <com.rasa.customfontviews.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fonts_TextView="iranSansBold"
+            android:text="User"
+            android:layout_margin="@dimen/standard_margin"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:layout_below="@+id/imageViewHeaderImage"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

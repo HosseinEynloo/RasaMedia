@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nestedScrool"
+    tools:context=".FragmentDetailChannel.FragmentDetailChannel">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview_vertical_detailChannel"
+        android:nestedScrollingEnabled="false"/>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_progressBarDetailChannel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#f0f2f1"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/progressBar_fragmentDetailChannel"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/standard_margin"
+            />
+
+        <com.rasa.customfontviews.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="لطفا صبر کنید"
+            android:textColor="@color/redColor"
+            android:layout_marginTop="@dimen/standard_margin"
+            app:fonts_TextView="iranSans"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/progressBar_fragmentDetailChannel"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

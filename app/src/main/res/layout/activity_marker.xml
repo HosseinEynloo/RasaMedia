@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityMarker.ActivityMarker">
+
+    <RelativeLayout
+        android:id="@+id/toolbarMarker"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        >
+
+        <com.rasa.customfontviews.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fonts_TextView="iranSansBold"
+            android:text="علاقه مندی ها"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"/>
+
+
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayoutMarker"
+        android:layout_below="@+id/toolbarMarker"/>
+
+</RelativeLayout>

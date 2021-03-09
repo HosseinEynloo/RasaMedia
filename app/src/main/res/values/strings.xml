@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">کامپیوتر من</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="error_network_connection">اشکال در اتصال به اینترنت</string>
+    <string name="error_get_data_try_again">اشکال در دریافت اطلاعات، مجددا تلاش نمایید</string>
+    <string name="error_server_not_found">سرور در دسترس نمی باشد، مجددا تلاش نمایید</string>
+    <string name="error_server_side">بروز خطا در سرور مجددا تلاش نمایید</string>
+    <string name="textContactUs">لطفا نظرات و پیشنهادات خود را برای ما ارسال کنید</string>
+
+</resources>

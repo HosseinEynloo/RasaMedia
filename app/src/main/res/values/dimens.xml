@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="small_margin">4dp</dimen>
+    <dimen name="standard_margin">8dp</dimen>
+    <dimen name="width_navigationView">280dp</dimen>
+    <dimen name="fragment_whith_bottom">52dp</dimen>
+    <dimen name="image_whith_textvierw">12dp</dimen>
+    <dimen name="heigh_imageview_new">130dp</dimen>
+    <dimen name="largMargin">16dp</dimen>
+    <dimen name="layout_height_imageviewMoreList">145dp</dimen>
+    <dimen name="layout_width_icon_frequentlyAsked">42dp</dimen>
+    <dimen name="layout_height_icon_frequentlyAsked">42dp</dimen>
+
+
+</resources>

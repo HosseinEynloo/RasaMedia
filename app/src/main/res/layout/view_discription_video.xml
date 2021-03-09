@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/small_margin">
+
+        <TextView
+            android:id="@+id/textViewTitle_descrption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/black"
+            tools:text="تاندون چیست؟" />
+
+        <ImageView
+            android:id="@+id/imageView_ic_showTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_arrow_drop_up_24dp" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textView_dependence_whith_Imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        android:layout_margin="@dimen/standard_margin"
+        tools:text="تاندون توضیحات و علم" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_visite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/standard_margin"
+            android:text="مشاهده"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/textView_visiteCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/textView_visite"
+            tools:text="153"
+            android:textColor="@android:color/black"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
+        android:paddingBottom="@dimen/small_margin"
+        android:layout_marginBottom="@dimen/standard_margin">
+
+        <ImageView
+            android:id="@+id/imageView_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="45dp"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_thumb_up_24dp"
+            android:background="@drawable/background_for_imageview_show_and_like"/>
+
+        <TextView
+            android:id="@+id/textView_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:layout_below="@+id/imageView_like"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/image_whith_textvierw"/>
+
+        <ImageView
+            android:id="@+id/imageView_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/standard_margin"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_share_24dp" />
+
+        <TextView
+            android:id="@+id/textView_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView_share"
+            android:layout_marginTop="@dimen/image_whith_textvierw"
+            android:layout_centerHorizontal="true"
+            android:text="اشتراک گذاری" />
+
+
+        <ImageView
+            android:id="@+id/imageViewMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:layout_marginLeft="45dp"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_star_border_24dp"
+            android:background="@drawable/background_for_imageview_show_and_like"/>
+
+        <TextView
+            android:id="@+id/textViewMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="نشان دادن"
+            android:layout_below="@+id/imageViewMark"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:layout_marginLeft="31dp"
+            android:layout_marginBottom="@dimen/standard_margin"
+            android:layout_marginTop="@dimen/image_whith_textvierw"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_marginRight="@dimen/standard_margin"
+        android:layout_marginLeft="@dimen/standard_margin"
+        android:layout_marginBottom="@dimen/standard_margin"/>
+
+        </LinearLayout>
+
+
+

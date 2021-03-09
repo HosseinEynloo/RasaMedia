@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/standard_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutBasicPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_margin">
+
+
+
+
+    <ImageView
+        android:id="@+id/imageViewBasicPage"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/standard_margin"
+        app:srcCompat="@drawable/ic_home_black_24dp"/>
+
+    <com.rasa.customfontviews.CustomFontTextView
+        android:id="@+id/textViewBasicPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="صفحه اصلی"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/imageViewBasicPage"
+        app:fonts_TextView="iranSans"
+        android:textColor="@color/black"
+        android:layout_marginRight="@dimen/largMargin"
+        />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutEnter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_margin"
+        android:layout_below="@+id/relativeLayoutBasicPage">
+
+
+
+
+        <ImageView
+            android:id="@+id/imageViewEnter"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/standard_margin"
+            app:srcCompat="@drawable/ic_home_black_24dp"/>
+
+        <com.rasa.customfontviews.CustomFontTextView
+            android:id="@+id/textViewEnter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="صفحه اصلی"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageViewEnter"
+            app:fonts_TextView="iranSans"
+            android:textColor="@color/black"
+            android:layout_marginRight="@dimen/largMargin"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+    android:id="@+id/relativeLayoutSubjects"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/small_margin"
+    android:layout_below="@+id/relativeLayoutEnter">
+
+
+
+
+    <ImageView
+        android:id="@+id/imageViewSubjects"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/standard_margin"
+        app:srcCompat="@drawable/ic_home_black_24dp"/>
+
+    <com.rasa.customfontviews.CustomFontTextView
+        android:id="@+id/textViewSubjects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="صفحه اصلی"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/imageViewSubjects"
+        app:fonts_TextView="iranSans"
+        android:textColor="@color/black"
+        android:layout_marginRight="@dimen/largMargin"
+        />
+
+</RelativeLayout>
+
+
+
+    </RelativeLayout>
+

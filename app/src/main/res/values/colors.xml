@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3f559b</color>-->
+    <!--<color name="colorPrimaryDark">#293d81</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+
+    <!--<color name="colorPrimary">#e22329</color>-->
+    <!--<color name="colorPrimaryDark">#b10009</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+
+    //twitter color
+    <!--<color name="colorPrimary">#0084b4</color>-->
+    <!--<color name="colorPrimaryDark">#006083</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+
+    <color name="colorPrimary">#6e4bac</color>
+    <color name="colorPrimaryDark">#6e4bac</color>
+    <color name="colorAccent">#6937c1</color>
+
+    <color name="colorPrimarydark">#4f2a8f</color>
+
+   <color name="belu">#90CAF9</color>
+   <color name="red">#FFCDD2</color>
+
+    <color name="beluDark">#64B5F6</color>
+
+    <color name="redDark">#EF9A9A</color>
+
+    <color name="gray_new">#E0E0E0</color>
+
+    <color name="yellow">#ffc30f</color>
+
+    <color name="redColor">#d73097</color>
+
+    <color name="green">#7af2c6</color>
+    <color name="belu1">#4e77bc</color>
+    <color name="yelow">#edf253</color>
+
+
+    <color name="colorTitleMain">#63610e</color>
+
+    <color name="colorIconMore">#08612a</color>
+    <color name="BELUE">#2056f5</color>
+
+
+
+
+    <color name="gray">#eceaea</color>
+
+    <color name="white">#ffff</color>
+    <color name="black">#000</color>
+
+
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+</resources>

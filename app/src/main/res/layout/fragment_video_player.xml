@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentVideoPlayer.Fragment_videoPlayer">
+
+
+
+
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout_videoPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <cn.jzvd.JZVideoPlayerStandard
+            android:id="@+id/jzvideoplayerstandard"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            />
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
+            >
+
+            <ImageView
+                android:id="@+id/imageView_videoPlayer_share"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/forward_arrow"
+                android:layout_alignParentRight="true"
+                />
+
+            <ImageView
+                android:id="@+id/imageView_videoPlayer_back"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:adjustViewBounds="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_keyboard_arrow_left_black"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_nestedScroolview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLayout_videoPlayer">
+
+
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollview_videoPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_discription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/small_margin">
+
+                <com.rasa.customfontviews.CustomFontTextView
+                    android:id="@+id/textViewTitle_descrption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorTitleMain"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    app:fonts_TextView="iranSans"
+                    android:textSize="16sp"
+                    android:layout_toRightOf="@+id/imageView_ic_showTextView"
+                    tools:text="تاندون چیست؟" />
+
+                <ImageView
+                    android:id="@+id/imageView_ic_showTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/ic_arrow_drop_down_24dp" />
+
+
+            </RelativeLayout>
+
+
+            <com.rasa.customfontviews.CustomFontTextView
+                android:id="@+id/textView_dependence_whith_Imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:visibility="gone"
+                app:fonts_TextView="iranSans"
+                android:layout_margin="@dimen/standard_margin"
+                tools:text="تاندون توضیحات و علم" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.rasa.customfontviews.CustomFontTextView
+                    android:id="@+id/textView_visite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/standard_margin"
+                    android:text="مشاهده"
+                    app:fonts_TextView="iranSans"
+                    android:textColor="@color/colorIconMore"
+                     />
+
+
+                <com.rasa.customfontviews.CustomFontTextView
+                    android:id="@+id/textView_visiteCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/textView_visite"
+                    tools:text="153"
+                    app:fonts_TextView="iranSans"
+                    android:textColor="@color/colorIconMore"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:paddingBottom="@dimen/small_margin"
+                android:layout_marginBottom="@dimen/standard_margin">
+
+                <ImageView
+                    android:id="@+id/imageView_like"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:layout_marginBottom="@dimen/standard_margin"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    tools:srcCompat="@drawable/ic_thumb_up_24dp"
+                    />
+
+                <com.rasa.customfontviews.CustomFontTextView
+                    android:id="@+id/textView_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:layout_below="@+id/imageView_like"
+                    android:layout_alignParentRight="true"
+                    app:fonts_TextView="iranSans"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_marginBottom="@dimen/standard_margin"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="@dimen/image_whith_textvierw"/>
+
+                <ImageView
+                    android:id="@+id/imageView_share"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/standard_margin"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/ic_share_24dp" />
+
+                <com.rasa.customfontviews.CustomFontTextView
+                    android:id="@+id/textView_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView_share"
+                    android:layout_marginTop="@dimen/image_whith_textvierw"
+                    android:layout_centerHorizontal="true"
+                    app:fonts_TextView="iranSans"
+                    android:textColor="@android:color/black"
+                    android:text="اشتراک گذاری" />
+
+
+                <ImageView
+                    android:id="@+id/imageViewMark"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginBottom="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    tools:srcCompat="@drawable/ic_star_border_24dp"
+                    android:background="@drawable/background_for_imageview_show_and_like"/>
+
+                <com.rasa.customfontviews.CustomFontTextView
+                    android:id="@+id/textViewMark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="نشان دادن"
+                    app:fonts_TextView="iranSans"
+                    android:textColor="@android:color/black"
+                    android:layout_below="@+id/imageViewMark"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_marginLeft="31dp"
+                    android:layout_marginBottom="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/image_whith_textvierw"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:layout_marginBottom="@dimen/standard_margin"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_videoPlayer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0f2f1"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/progressBar_fragmentVideoPlayer"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+
+        <com.rasa.customfontviews.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="لطفا صبر کنید"
+            android:textColor="@color/redColor"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            app:fonts_TextView="iranSans"
+            android:layout_below="@+id/progressBar_fragmentVideoPlayer"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+
+
+
+

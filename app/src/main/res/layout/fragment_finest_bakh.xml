@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentFinestBakh.FragmentFinestBakh"
+    android:id="@+id/swipeRefreshLayoutFinest">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/coordinatorLayoutFinest">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView_finestBakh"/>
+
+
+        <Button
+            android:id="@+id/btnRetryForFinest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="retry"
+            android:background="@drawable/shape_btn_contact_us"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical|center_horizontal"/>
+
+
+        <RelativeLayout
+        android:id="@+id/relativeLayout_progressBar_finest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0f2f1"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/progressBar_fragmentFinest"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+
+        <com.rasa.customfontviews.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="لطفا صبر کنید"
+            android:textColor="@color/redColor"
+            android:layout_marginTop="@dimen/small_margin"
+            app:fonts_TextView="iranSans"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/progressBar_fragmentFinest"
+            />
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

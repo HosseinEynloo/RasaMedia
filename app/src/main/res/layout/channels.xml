@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:layout_height="130dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/standard_margin"
+    app:cardCornerRadius="@dimen/small_margin"
+
+
+    >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/background_group_channels"
+            >
+
+
+                <ImageView
+                    android:id="@+id/imageview_channel"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    tools:src="@drawable/channel"
+                    android:padding="@dimen/standard_margin"
+                    android:layout_centerHorizontal="true"
+
+                    />
+
+                <com.rasa.customfontviews.CustomFontTextView
+                    android:id="@+id/textview_channel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorIconMore"
+                    android:textSize="12sp"
+                    app:fonts_TextView="iranSans"
+                    tools:text="کانال سلامت"
+                    android:layout_below="@+id/imageview_channel"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"/>
+
+
+
+        </RelativeLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

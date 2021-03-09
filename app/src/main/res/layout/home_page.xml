@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipRefreshLayuoytHome">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/coordinatorLayoutHome">
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_GroupChannel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:padding="@dimen/small_margin" />
+
+
+        <FrameLayout
+            android:id="@+id/frameLayout_detailChannel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/recyclerView_GroupChannel"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_marginTop="@dimen/standard_margin" >
+
+            <Button
+                android:id="@+id/btnRetry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="retry"
+                android:background="@drawable/shape_btn_contact_us"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical|center_horizontal"/>
+
+        </FrameLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_progressBarHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#f0f2f1"
+            android:visibility="visible">
+
+            <ProgressBar
+                android:id="@+id/progressBar_fragmentHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="visible"
+                android:layout_marginBottom="@dimen/standard_margin"/>
+
+            <com.rasa.customfontviews.CustomFontTextView
+                android:id="@+id/textPlaseWait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="لطفا صبر کنید"
+                android:textColor="@color/redColor"
+                app:fonts_TextView="iranSans"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/progressBar_fragmentHome"
+                />
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

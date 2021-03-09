@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/home" android:title="خانه" android:icon="@drawable/ic_home_black_24dp" />
+    <item android:id="@+id/news" android:title="تازه ها" android:icon="@drawable/news"/>
+    <item android:id="@+id/finestBakh" android:title="برترین ها" android:icon="@drawable/ic_finest_24dp"/>
+    <item android:id="@+id/marker_bottomNavigation" android:title="علاقه مندی" android:icon="@drawable/ic_favorite_24dp"/>
+</menu>

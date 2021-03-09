@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/standard_margin">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView_new"
+            android:layout_width="190dp"
+            android:layout_height="110dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:background="@drawable/imageview_shape_homepage"
+            tools:src="@drawable/ic_launcher_background"
+            />
+
+        <TextView
+            android:id="@+id/textView_title_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            tools:text="salam "
+            android:layout_alignRight="@+id/imageView_new"
+            android:layout_alignLeft="@+id/imageView_new"
+            android:layout_below="@+id/imageView_new"
+            android:layout_marginTop="@dimen/small_margin"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/textview_discription_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            tools:text="alii"
+            android:layout_alignRight="@+id/imageView_new"
+            android:layout_alignLeft="@+id/imageView_new"
+            android:layout_below="@+id/textView_title_new"
+            android:layout_marginTop="@dimen/small_margin"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/DefaultVisit_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="144"
+            android:maxLines="1"
+            android:layout_alignRight="@+id/imageView_new"
+            android:layout_below="@+id/textView_title_new"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/small_margin"
+            />
+    </RelativeLayout>
+
+
+
+</LinearLayout>
